@@ -13,6 +13,8 @@ public class ToDoList {
             System.out.println("2 - Görevleri Listele");
             System.out.println("3 - Görevi Tamamla");
             System.out.println("4 - Çıkış");
+            System.out.println("5 - Tüm Görevleri Temizle");
+
             System.out.print("Seçiminizi yapın: ");
 
             int secim = scanner.nextInt();
@@ -51,6 +53,11 @@ public class ToDoList {
                     return;
                 default:
                     System.out.println("Geçersiz seçim, tekrar deneyin.");
+                case 5:
+                    gorevler.clear();
+                    System.out.println("Tüm görevler temizlendi.");
+                    break;
+
             }
         }
     }
